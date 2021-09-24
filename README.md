@@ -6,7 +6,7 @@
 # install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at yourip:8000
 $ yarn dev
 
 # build for production and launch server
@@ -16,6 +16,12 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
+# ADDITIONAL NOTES
+No 'user' api call available, so I had to work around those issues.
+Issues you might experience includes:
+- unable to store token properly, so refreshing the page will disrupt your session.
+- If the request is unauthorized, please log out and log back in.
+- getting 'unauthorized' error when requesting a logout call, so I forced the route to go to login page.
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
